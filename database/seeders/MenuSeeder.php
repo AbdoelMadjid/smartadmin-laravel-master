@@ -3,12 +3,15 @@
 namespace Database\Seeders;
 
 use App\Models\Konfigurasi\Menu;
+use App\Models\Permission;
+use App\Traits\HasMenuPermission;
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
 use Illuminate\Support\Facades\Cache;
 
 class MenuSeeder extends Seeder
 {
+    use HasMenuPermission;
     /**
      * Run the database seeds.
      */
@@ -19,6 +22,9 @@ class MenuSeeder extends Seeder
          * @var Menu $mm
          */
         $mm = Menu::firstOrCreate(['url' => 'konfigurasi'], ['name' => 'Konfigurasi', 'category' => 'MASTER DATA', 'icon' => 'settings']);
-        $mm->subMenus()->create(['name' => 'Menu', 'url' => $mm->url . '/menu', 'category' => $mm->category]);
+        $this->attachMenupermission($mm, ['read'], ['admin']);
+
+        $sm = $mm->subMenus()->create(['name' => 'Menu', 'url' => $mm->url . '/menu', 'category' => $mm->category]);
+        $this->attachMenupermission($sm, ['create', 'read', 'update', 'delete', 'sort'], ['admin']);
     }
 }
