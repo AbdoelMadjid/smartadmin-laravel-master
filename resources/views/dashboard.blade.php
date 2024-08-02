@@ -13,7 +13,6 @@
                 'icon' => 'home',
                 'heading1' => 'Dashboard',
                 'heading2' => Auth::user()->getRoleLabel(),
-                'sup' => 'ADDON',
                 'pagedescription' => Auth::user()->getRoleLabel() . ' with dashboard',
             ])
                 <div class="subheader-block d-lg-flex align-items-center">

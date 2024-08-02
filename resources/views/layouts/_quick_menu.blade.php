@@ -6,14 +6,14 @@
     <a href="#" class="menu-item btn" data-toggle="tooltip" data-placement="left" title="Scroll Top">
         <i class="fal fa-arrow-up"></i>
     </a>
-    <a href="#" id="ya-atau-tidak" class="menu-item btn" data-title="Konfirmasi"
-        data-message="Apakah Anda yakin ingin logout?" data-redirect-url="/" data-toggle="tooltip" data-placement="left"
-        title="Logout">
-        <i class="fal fa-sign-out"></i>
-    </a>
-    {{--     <a href="/page_auth_login" class="menu-item btn" data-toggle="tooltip" data-placement="left" title="Logout">
-        <i class="fal fa-sign-out"></i>
-    </a> --}}
+    <form method="POST" action="{{ route('logout') }}" class="menu-item btn">
+        @csrf
+        <a href="{{ route('logout') }}" id="ya-atau-tidak" class="menu-item btn" data-title="Konfirmasi"
+            data-message="Apakah Anda yakin ingin logout?" data-redirect-url="/" data-toggle="tooltip"
+            data-placement="left" title="Logout">
+            <i class="fal fa-sign-out"></i>
+        </a>
+    </form>
     <a href="#" class="menu-item btn" data-action="app-fullscreen" data-toggle="tooltip" data-placement="left"
         title="Full Screen">
         <i class="fal fa-expand"></i>
