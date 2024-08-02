@@ -12,9 +12,9 @@
             @component('layouts._page_heading', [
                 'icon' => 'home',
                 'heading1' => 'Dashboard',
-                'heading2' => 'Admin',
+                'heading2' => Auth::user()->getRoleLabel(),
                 'sup' => 'ADDON',
-                'pagedescription' => 'Administration with dashboard',
+                'pagedescription' => Auth::user()->getRoleLabel() . ' with dashboard',
             ])
                 <div class="subheader-block d-lg-flex align-items-center">
                     <div class="d-inline-flex flex-column justify-content-center mr-3">
@@ -22,7 +22,7 @@
                             <small>Selamat Datang</small>
                         </span>
                         <span class="fw-500 fs-xl d-block color-primary-500">
-                            Abdul Madjid
+                            {{ Auth::user()->name }}
                         </span>
                     </div>
                 </div>
@@ -33,7 +33,7 @@
                             <small>Status</small>
                         </span>
                         <span class="fw-500 fs-xl d-block color-danger-500">
-                            MASTER
+                            {{ Auth::user()->getRoleLabel() }}
                         </span>
                     </div>
                 </div>
@@ -41,14 +41,8 @@
         </div>
 
         <div class="fs-lg fw-300 p-5 bg-white border-faded rounded mb-g shadow-5">
-            <div class="input-group input-group-lg mb-g">
-                <input type="text" class="form-control shadow-inset-2" placeholder="Search Threads">
-                <div class="input-group-append">
-                    <span class="input-group-text"><i class="fal fa-search"></i></span>
-                </div>
-            </div>
             <h3 class="mb-g">
-                Hi Everyone,
+                Hi {{ Auth::user()->name }},
             </h3>
             <p>
                 Some time ago we asked for your input, whether you were a seasoned SmartAdmin user or just peeking around

@@ -37,6 +37,20 @@
                     </div>
                     <div class="text-center">
                         <h1>{{ $profileApp->app_nama ?? '' }} WebApp</h1>
+                        @if (Route::has('login'))
+                            @auth
+                                <form method="POST" action="{{ route('logout') }}">
+                                    {{ Auth::user()->name }} anda sudah login sebagai {{ Auth::user()->getRoleLabel() }}<br>
+                                    silakan
+                                    @csrf
+                                    <a href="{{ route('logout') }}" id="ya-atau-tidak" data-title="Konfirmasi"
+                                        data-message="Apakah Anda yakin ingin logout?" data-redirect-url="/"
+                                        title="Logout">Logout</a>
+                                    atau kembali ke <a href="{{ url('/dashboard') }}">Dashboard</a>
+                                </form>
+                            @else
+                            @endauth
+                        @endif
                     </div>
                 </div>
                 <div class="position-absolute pos-bottom pos-left pos-right p-3 text-center text-white">

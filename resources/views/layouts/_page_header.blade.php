@@ -79,8 +79,8 @@
                                 alt="Dr. Codex Lantern">
                         </span>
                         <div class="info-card-text">
-                            <div class="fs-lg text-truncate text-truncate-lg">Dr. Codex Lantern</div>
-                            <span class="text-truncate text-truncate-md opacity-80">drlantern@gotbootstrap.com</span>
+                            <div class="fs-lg text-truncate text-truncate-lg">{{ Auth::user()->name }}</div>
+                            <span class="text-truncate text-truncate-md opacity-80">{{ Auth::user()->email }}</span>
                         </div>
                     </div>
                 </div>

@@ -43,4 +43,22 @@ class User extends Authenticatable
         'email_verified_at' => 'datetime',
         'password' => 'hashed',
     ];
+
+
+    public function getRoleLabel(): string
+    {
+        $rolesLabels = [
+            'master' => 'Master',
+            'admin' => 'Administrator',
+            'kepsek' => 'Kepala Sekolah',
+            'wakasek' => 'Wakil Kepala Sekolah',
+            'gmapel' => 'Guru Mapel',
+            'walas' => 'Wali Kelas',
+            'siswa' => 'Peserta Didik',
+        ];
+
+        $roleName = $this->getRoleNames()->first();
+
+        return $rolesLabels[$roleName] ?? $roleName;
+    }
 }

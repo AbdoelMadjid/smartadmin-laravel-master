@@ -15,8 +15,7 @@ class UserSeeder extends Seeder
     public function run(): void
     {
         $users = ['master', 'admin', 'kepsek', 'wakasek', 'gmapel', 'walas', 'siswa'];
-        $names = ['Master', 'Admin', 'Kepala Sekolah', 'Wakil Kepala Sekolah', 'Guru Mapel', 'Wali Kelas', 'Siswa'];
-
+        $names = ['Abdul Madjid', 'Ramdani Trias Sumiarsa', 'Damudin', 'Ebah Habibah', 'Otong Sunahdi', 'Tabiin', 'Azzam Ikbara Al-Madjid'];
 
         $default = [
             'password' => bcrypt('password'),
@@ -24,11 +23,13 @@ class UserSeeder extends Seeder
             'remember_token' => Str::random(10)
         ];
 
-
         foreach ($users as $index => $value) {
+            $name = $names[$index];
+            $email = strtolower(str_replace(' ', '_', $name)) . '@gmail.com';
+
             User::create([...$default, ...[
-                'name' => $names[$index],
-                'email' => $value . '@gmail.com',
+                'name' => $name,
+                'email' => $email,
             ]])->assignRole($value);
         }
     }
