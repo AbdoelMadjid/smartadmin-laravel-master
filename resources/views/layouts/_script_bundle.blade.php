@@ -23,3 +23,4 @@
         $('#js-page-content').smartPanel();
     </script>
     --}}
+    <script src="/assets/js/notifications/toastr/toastr.js"></script>
