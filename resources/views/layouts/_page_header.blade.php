@@ -121,7 +121,6 @@
                         data-title="Konfirmasi" data-message="Apakah Anda yakin ingin logout?" data-redirect-url="/"
                         title="Logout">
                         <span data-i18n="drpdwn.page-logout">Logout</span>
-                        <span class="float-right fw-n">&commat;codexlantern</span>
                     </a>
                 </form>
             </div>
