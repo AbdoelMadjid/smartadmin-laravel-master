@@ -1,8 +1,8 @@
 @extends('layouts.main')
 @section('title', 'Menu')
 @section('pages-css')
-    <link rel="stylesheet" media="screen, print" href="/assets/css/datagrid/datatables/datatables.bundle.css">
-    <link rel="stylesheet" media="screen, print" href="/assets/css/theme-demo.css">
+    {{-- <link rel="stylesheet" media="screen, print" href="/assets/css/datagrid/datatables/datatables.bundle.css"> --}}
+    <link rel="stylesheet" media="screen, print" href="/assets/css/datagrid/datatables/datatables.min.css">
 @endsection
 @section('pages-content')
     <main id="js-page-content" role="main" class="page-content">
@@ -21,6 +21,7 @@
     </main>
 @endsection
 @section('pages-script')
-    <script src="/assets/js/datagrid/datatables/datatables.bundle.js"></script>
+    {{-- <script src="/assets/js/datagrid/datatables/datatables.bundle.js"></script> --}}
+    <script src="/assets/js/datagrid/datatables/dataTables.min.js"></script>
     {!! $dataTable->scripts() !!}
 @endsection
