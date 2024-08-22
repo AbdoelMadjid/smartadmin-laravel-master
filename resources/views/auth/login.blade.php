@@ -54,19 +54,19 @@ License: You must have a valid license purchased only from wrapbootstrap.com (li
                 </a>
             </div>
             <div class="card p-4 border-top-left-radius-0 border-top-right-radius-0">
-                <x-auth-session-status class="mb-4" :status="session('status')" />
+                <x-breeze.auth-session-status class="mb-4" :status="session('status')" />
                 <form method="POST" action="{{ route('login') }}">
                     @csrf
-                    <x-input-error :messages="$errors->get('email')" />
-                    <x-input-error :messages="$errors->get('password')" />
+                    <x-breeze.input-error :messages="$errors->get('email')" />
+                    <x-breeze.input-error :messages="$errors->get('password')" />
                     <div class="form-group">
-                        <x-input-label for="email" :value="__('Email')" />
-                        <x-text-input id="email" type="email" name="email" :value="old('email')" required autofocus
-                            autocomplete="username" />
+                        <x-breeze.input-label for="email" :value="__('Email')" />
+                        <x-breeze.text-input id="email" type="email" name="email" :value="old('email')" required
+                            autofocus autocomplete="username" />
                     </div>
                     <div class="form-group">
-                        <x-input-label for="password" :value="__('Password')" />
-                        <x-text-input id="password" type="password" name="password" required
+                        <x-breeze.input-label for="password" :value="__('Password')" />
+                        <x-breeze.text-input id="password" type="password" name="password" required
                             autocomplete="current-password" />
                     </div>
                     <div class="form-group text-left">
@@ -75,9 +75,9 @@ License: You must have a valid license purchased only from wrapbootstrap.com (li
                             <label class="custom-control-label" for="remember_me"> {{ __('Remember me') }}</label>
                         </div>
                     </div>
-                    <x-primary-button class="float-right">
+                    <x-breeze.primary-button class="float-right">
                         {{ __('Login') }}
-                    </x-primary-button>
+                    </x-breeze.primary-button>
                 </form>
             </div>
             <div class="blankpage-footer text-center">
@@ -92,7 +92,8 @@ License: You must have a valid license purchased only from wrapbootstrap.com (li
                 href="https://laravel.com/docs/10.x" title='laravel.com' class="opacity-90" target="_blank">Laravel
                 v{{ Illuminate\Foundation\Application::VERSION }} (PHP v{{ PHP_VERSION }})</a>
         </div>
-        <video poster="{{ asset('') }}assets/img/backgrounds/clouds.png" id="bgvid" playsinline autoplay muted loop>
+        <video poster="{{ asset('') }}assets/img/backgrounds/clouds.png" id="bgvid" playsinline autoplay muted
+            loop>
             <source src="{{ asset('') }}assets/media/video/cc.webm" type="video/webm">
             <source src="{{ asset('') }}assets/media/video/cc.mp4" type="video/mp4">
         </video>
