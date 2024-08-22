@@ -1,10 +1,11 @@
-{{-- @props(['name', 'label', 'value' => '', 'id' => $name, 'type' => 'text'])
+@props(['name', 'label', 'value' => '', 'id' => $name, 'type' => 'text'])
 <div class="form-group">
     <label for="{{ $id }}" class="form-label">{{ $label }}</label>
     <input type="{{ $type }}" id="{{ $id }}" {{ $attributes->merge(['class' => 'form-control']) }}
         name="{{ $name }}" value="{{ $value }}">
-</div> --}}
+</div>
 
+{{--
 @props([
     'name',
     'label',
@@ -23,7 +24,9 @@
 <div class="{{ $formGroupClass }}">
     <label for="{{ $id }}" class="{{ $labelClass }}">{{ $label }}</label>
     <div class="{{ $inputWrapperClass }}">
-        <input type="{{ $type }}" id="{{ $id }}" {{ $attributes->merge(['class' => 'form-control']) }}
-            name="{{ $name }}" value="{{ $value }}">
+        <input type="{{ $type }}" id="{{ $id }}"
+            {{ $attributes->merge(['class' => 'form-control']) }} name="{{ $name }}"
+            value="{{ $value }}">
     </div>
 </div>
+ --}}

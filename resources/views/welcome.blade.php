@@ -40,7 +40,7 @@
                         @if (Route::has('login'))
                             @auth
                                 <form method="POST" action="{{ route('logout') }}">
-                                    {{ Auth::user()->name }} anda sudah login sebagai {{ Auth::user()->getRoleLabel() }}<br>
+                                    {{ Auth::user()->name }} anda sudah login sebagai {{ getRoleName() }}<br>
                                     silakan
                                     @csrf
                                     <a href="{{ route('logout') }}" id="ya-atau-tidak" data-title="Konfirmasi"

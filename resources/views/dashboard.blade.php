@@ -15,44 +15,21 @@
                 'heading2' => getRoleName(),
                 'pagedescription' => getRoleName() . ' with dashboard',
             ])
-                <div class="subheader-block d-lg-flex align-items-center">
-                    <div class="d-inline-flex flex-column justify-content-center mr-3">
-                        <span class="fw-300 fs-xs d-block opacity-50">
-                            <small>{!! renderGreeting() !!}</small>
-                        </span>
-                        <span class="fw-500 fs-xl d-block color-primary-500">
-                            {{ Auth::user()->name }}
-                        </span>
-                    </div>
-                </div>
-                <div
-                    class="subheader-block d-lg-flex align-items-center border-faded border-right-0 border-top-0 border-bottom-0 ml-3 pl-3">
-                    <div class="d-inline-flex flex-column justify-content-center mr-3">
-                        <span class="fw-300 fs-xs d-block opacity-50">
-                            <small>Status</small>
-                        </span>
-                        <span class="fw-500 fs-xl d-block color-danger-500">
-                            {{ getRoleName() }}
-                        </span>
-                    </div>
-                </div>
-                <div
-                    class="subheader-block d-lg-flex align-items-center border-faded border-right-0 border-top-0 border-bottom-0 ml-3 pl-3">
-                    <div class="d-inline-flex flex-column justify-content-center mr-3">
-                        <span class="fw-300 fs-xs d-block opacity-50">
-                            <small>Times</small>
-                        </span>
-                        <span class="fw-500 fs-xl d-block color-success-500">
-                            <span class="fw-medium" id="dboard">{!! renderTime('dboard') !!}</span>
-                        </span>
-                    </div>
-                </div>
+                <x-subheader-block label="{!! renderGreeting() !!}" value="{{ Auth::user()->name }}"
+                    color-class="color-primary-500" />
+
+                <x-subheader-block label="Status" value=" {{ getRoleName() }}" color-class="color-danger-500"
+                    additional-classes="border-faded border-right-0 border-top-0 border-bottom-0 ml-3 pl-3" />
+
+                <x-subheader-block label="Times" value="<span class='fw-medium' id='dboard'>{!! renderTime('dboard') !!}</span>"
+                    color-class="color-success-500"
+                    additional-classes="border-faded border-right-0 border-top-0 border-bottom-0 ml-3 pl-3" />
             @endcomponent
         </div>
 
         <div class="fs-lg fw-300 p-5 bg-white border-faded rounded mb-g shadow-5">
             <h3 class="mb-g">
-                Hi {{ Auth::user()->name }},
+                Hi {!! renderGreeting() !!} <br>{{ Auth::user()->name }},
             </h3>
             <p>
                 Some time ago we asked for your input, whether you were a seasoned SmartAdmin user or just peeking around

@@ -45,7 +45,7 @@ class User extends Authenticatable
     ];
 
 
-    public function getRoleLabel(): string
+    /* public function getRoleLabel(): string
     {
         $rolesLabels = [
             'master' => 'Master',
@@ -60,5 +60,5 @@ class User extends Authenticatable
         $roleName = $this->getRoleNames()->first();
 
         return $rolesLabels[$roleName] ?? $roleName;
-    }
+    } */
 }

@@ -80,7 +80,7 @@
                         </span>
                         <div class="info-card-text">
                             <div class="fs-lg text-truncate text-truncate-lg">{{ Auth::user()->name }}</div>
-                            <span class="text-truncate text-truncate-md opacity-80">{{ Auth::user()->email }}</span>
+                            <span class="text-truncate text-truncate-md opacity-80">{{ getRoleName() }}</span>
                         </div>
                     </div>
                 </div>
