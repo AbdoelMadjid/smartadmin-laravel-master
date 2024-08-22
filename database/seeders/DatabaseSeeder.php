@@ -23,6 +23,7 @@ class DatabaseSeeder extends Seeder
             UserSeeder::class,
             AppFiturSeeder::class,
             AppProfileSeeder::class,
+            MenuSeeder::class,
         ]);
     }
 }

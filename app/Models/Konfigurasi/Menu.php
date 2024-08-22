@@ -2,9 +2,15 @@
 
 namespace App\Models\Konfigurasi;
 
+<<<<<<< HEAD
 use App\Models\Permission;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
+=======
+use Illuminate\Database\Eloquent\Factories\HasFactory;
+use Illuminate\Database\Eloquent\Model;
+use Spatie\Permission\Models\Permission;
+>>>>>>> 4656ac1d484d792549066f2657c52872817354e6
 
 class Menu extends Model
 {
