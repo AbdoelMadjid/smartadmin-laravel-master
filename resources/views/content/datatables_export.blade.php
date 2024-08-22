@@ -1,8 +1,9 @@
 @extends('layouts.main')
 @section('title', 'Export')
 @section('pages-css')
-    <link rel="stylesheet" media="screen, print" href="/assets/css/datagrid/datatables/datatables.bundle.css">
-    <link rel="stylesheet" media="screen, print" href="/assets/css/fa-solid.css">
+    <link rel="stylesheet" media="screen, print"
+        href="{{ asset('') }}assets/css/datagrid/datatables/datatables.bundle.css">
+    <link rel="stylesheet" media="screen, print" href="{{ asset('') }}assets/css/fa-solid.css">
 @endsection
 @section('pages-content')
     <main id="js-page-content" role="main" class="page-content">
@@ -547,33 +548,33 @@
 @endsection
 @section('pages-script')
     <!-- datatble responsive bundle contains:
-                             + jquery.dataTables.js
-                             + dataTables.bootstrap4.js
-                             + dataTables.autofill.js
-                             + dataTables.buttons.js
-                             + buttons.bootstrap4.js
-                             + buttons.html5.js
-                             + buttons.print.js
-                             + buttons.colVis.js
-                             + dataTables.colreorder.js
-                             + dataTables.fixedcolumns.js
-                             + dataTables.fixedheader.js
-                             + dataTables.keytable.js
-                             + dataTables.responsive.js
-                             + dataTables.rowgroup.js
-                             + dataTables.rowreorder.js
-                             + dataTables.scroller.js
-                             + dataTables.select.js
-                             + datatables.styles.app.js
-                             + datatables.styles.buttons.app.js -->
-    <script src="/assets/js/datagrid/datatables/datatables.bundle.js"></script>
+                                     + jquery.dataTables.js
+                                     + dataTables.bootstrap4.js
+                                     + dataTables.autofill.js
+                                     + dataTables.buttons.js
+                                     + buttons.bootstrap4.js
+                                     + buttons.html5.js
+                                     + buttons.print.js
+                                     + buttons.colVis.js
+                                     + dataTables.colreorder.js
+                                     + dataTables.fixedcolumns.js
+                                     + dataTables.fixedheader.js
+                                     + dataTables.keytable.js
+                                     + dataTables.responsive.js
+                                     + dataTables.rowgroup.js
+                                     + dataTables.rowreorder.js
+                                     + dataTables.scroller.js
+                                     + dataTables.select.js
+                                     + datatables.styles.app.js
+                                     + datatables.styles.buttons.app.js -->
+    <script src="{{ asset('') }}assets/js/datagrid/datatables/datatables.bundle.js"></script>
     <!-- datatbles buttons bundle contains:
-                             + "jszip.js",
-                             + "pdfmake.js",
-                             + "vfs_fonts.js"
-                             NOTE: 	The file size is pretty big, but you can always use the
-                               build.json file to deselect any components you do not need under "export" -->
-    <script src="/assets/js/datagrid/datatables/datatables.export.js"></script>
+                                     + "jszip.js",
+                                     + "pdfmake.js",
+                                     + "vfs_fonts.js"
+                                     NOTE: 	The file size is pretty big, but you can always use the
+                                       build.json file to deselect any components you do not need under "export" -->
+    <script src="{{ asset('') }}assets/js/datagrid/datatables/datatables.export.js"></script>
     <script>
         $(document).ready(function() {
 

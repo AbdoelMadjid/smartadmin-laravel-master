@@ -1,8 +1,8 @@
 @extends('layouts.main')
 @section('title', 'SweetAlert2')
 @section('pages-css')
-    <link rel="stylesheet" media="screen, print" href="/assets/css/notifications/sweetalert2/sweetalert2.bundle.css">
-    <link rel="stylesheet" media="screen, print" href="/assets/css/theme-demo.css">
+    <link rel="stylesheet" media="screen, print" href="{{ asset('') }}assets/css/notifications/sweetalert2/sweetalert2.bundle.css">
+    <link rel="stylesheet" media="screen, print" href="{{ asset('') }}assets/css/theme-demo.css">
 @endsection
 @section('pages-content')
     <main id="js-page-content" role="main" class="page-content">
@@ -253,7 +253,7 @@
 @endsection
 @section('pages-script')
     <!-- Include a polyfill for ES6 Promises (optional) for IE11, UC Browser and Android browser support -->
-    <script src="/assets/js/notifications/sweetalert2/sweetalert2.bundle.js"></script>
+    <script src="{{ asset('') }}assets/js/notifications/sweetalert2/sweetalert2.bundle.js"></script>
     <script>
         $(document).ready(function() {
 

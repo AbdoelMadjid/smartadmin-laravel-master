@@ -411,7 +411,7 @@
     <!-- peity bundle:
                   + jquery.peity.js (core)
                   + src/../jquery.peity.config.js (config) -->
-    <script src="/assets/js/statistics/peity/peity.bundle.js"></script>
+    <script src="{{ asset('') }}assets/js/statistics/peity/peity.bundle.js"></script>
     <script>
         $(document).ready(function() {
 

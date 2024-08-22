@@ -65,7 +65,8 @@
                             <div class="toast fade show" role="alert" aria-live="assertive" aria-atomic="true"
                                 data-toggle="toast">
                                 <div class="toast-header">
-                                    <img src="/assets/img/logo.png" alt="brand-logo" height="16" class="mr-2">
+                                    <img src="{{ asset('') }}assets/img/logo.png" alt="brand-logo" height="16"
+                                        class="mr-2">
                                     <strong class="mr-auto">SmartAdmin</strong>
                                     <small>11 mins ago</small>
                                     <button type="button" class="ml-2 close" data-dismiss="toast" aria-label="Close">
@@ -106,8 +107,8 @@
                                     <div class="toast fade show" role="alert" aria-live="assertive" aria-atomic="true"
                                         data-toggle="toast">
                                         <div class="toast-header">
-                                            <img src="/assets/img/logo.png" alt="brand-logo" height="16"
-                                                class="mr-2">
+                                            <img src="{{ asset('') }}assets/img/logo.png" alt="brand-logo"
+                                                height="16" class="mr-2">
                                             <strong class="mr-auto">SmartAdmin</strong>
                                             <small class="text-muted">just now</small>
                                             <button type="button" class="ml-2 close" data-dismiss="toast"
@@ -123,8 +124,8 @@
                                     <div class="toast fade show" role="alert" aria-live="assertive" aria-atomic="true"
                                         data-toggle="toast">
                                         <div class="toast-header">
-                                            <img src="/assets/img/logo.png" alt="brand-logo" height="16"
-                                                class="mr-2">
+                                            <img src="{{ asset('') }}assets/img/logo.png" alt="brand-logo"
+                                                height="16" class="mr-2">
                                             <strong class="mr-auto">SmartAdmin</strong>
                                             <small class="text-muted">2 seconds ago</small>
                                             <button type="button" class="ml-2 close" data-dismiss="toast"
@@ -169,7 +170,8 @@
                                 <div class="toast fade show" role="alert" aria-live="assertive" aria-atomic="true"
                                     data-toggle="toast">
                                     <div class="toast-header">
-                                        <img src="/assets/img/logo.png" alt="brand-logo" height="16" class="mr-2">
+                                        <img src="{{ asset('') }}assets/img/logo.png" alt="brand-logo" height="16"
+                                            class="mr-2">
                                         <strong class="mr-auto">SmartAdmin</strong>
                                         <small>11 mins ago</small>
                                         <button type="button" class="ml-2 close" data-dismiss="toast"
@@ -213,7 +215,8 @@
                                 <div class="toast fade show" role="alert" aria-live="assertive" aria-atomic="true"
                                     data-toggle="toast">
                                     <div class="toast-header">
-                                        <img src="/assets/img/logo.png" alt="brand-logo" height="16" class="mr-2">
+                                        <img src="{{ asset('') }}assets/img/logo.png" alt="brand-logo" height="16"
+                                            class="mr-2">
                                         <strong class="mr-auto">SmartAdmin</strong>
                                         <small>11 mins ago</small>
                                         <button type="button" class="ml-2 close" data-dismiss="toast"

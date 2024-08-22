@@ -1,7 +1,7 @@
 @extends('layouts.main_auth')
 @section('title', 'Register')
 @section('pages-css')
-    <link rel="stylesheet" media="screen, print" href="/assets/css/fa-brands.css">
+    <link rel="stylesheet" media="screen, print" href="{{ asset('') }}assets/css/fa-brands.css">
 @endsection
 @section('pages-content')
     @component('layouts._auth_header')
@@ -13,7 +13,7 @@
         </a>
     @endcomponent
     <div class="flex-1"
-        style="background: url(/assets/img/svg/pattern-1.svg) no-repeat center bottom fixed; background-size: cover;">
+        style="background: url({{ asset('') }}assets/img/svg/pattern-1.svg) no-repeat center bottom fixed; background-size: cover;">
         <div class="container py-4 py-lg-5 my-lg-5 px-4 px-sm-0">
             <div class="row">
                 <div class="col col-md-6 col-lg-7 hidden-sm-down">

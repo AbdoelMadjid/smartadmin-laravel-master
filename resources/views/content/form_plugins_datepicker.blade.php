@@ -1,7 +1,8 @@
 @extends('layouts.main')
 @section('title', 'Date Picker')
 @section('pages-css')
-    <link rel="stylesheet" media="screen, print" href="/assets/css/formplugins/bootstrap-datepicker/bootstrap-datepicker.css">
+    <link rel="stylesheet" media="screen, print"
+        href="{{ asset('') }}assets/css/formplugins/bootstrap-datepicker/bootstrap-datepicker.css">
 @endsection
 @section('pages-content')
     <main id="js-page-content" role="main" class="page-content">
@@ -224,7 +225,7 @@
     </main>
 @endsection
 @section('pages-script')
-    <script src="/assets/js/formplugins/bootstrap-datepicker/bootstrap-datepicker.js"></script>
+    <script src="{{ asset('') }}assets/js/formplugins/bootstrap-datepicker/bootstrap-datepicker.js"></script>
     <script>
         // Class definition
 

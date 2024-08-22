@@ -1,8 +1,9 @@
 @extends('layouts.main')
 @section('title', 'KeyTable')
 @section('pages-css')
-    <link rel="stylesheet" media="screen, print" href="/assets/css/datagrid/datatables/datatables.bundle.css">
-    <link rel="stylesheet" media="screen, print" href="/assets/css/theme-demo.css">
+    <link rel="stylesheet" media="screen, print"
+        href="{{ asset('') }}assets/css/datagrid/datatables/datatables.bundle.css">
+    <link rel="stylesheet" media="screen, print" href="{{ asset('') }}assets/css/theme-demo.css">
 @endsection
 @section('pages-content')
     <main id="js-page-content" role="main" class="page-content">
@@ -583,7 +584,7 @@
      + dataTables.select.js
      + datatables.styles.app.js
      + datatables.styles.buttons.app.js --> --}}
-    <script src="/assets/js/datagrid/datatables/datatables.bundle.js"></script>
+    <script src="{{ asset('') }}assets/js/datagrid/datatables/datatables.bundle.js"></script>
     <script>
         var events = $('#app-eventlog');
         var clearlogText = function() {

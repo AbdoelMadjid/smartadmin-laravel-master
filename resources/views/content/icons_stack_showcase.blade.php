@@ -1,10 +1,10 @@
 @extends('layouts.main')
 @section('title', 'Base')
 @section('pages-css')
-    <link rel="stylesheet" media="screen, print" href="/assets/css/fa-light.css">
-    <link rel="stylesheet" media="screen, print" href="/assets/css/fa-regular.css">
-    <link rel="stylesheet" media="screen, print" href="/assets/css/fa-solid.css">
-    <link rel="stylesheet" media="screen, print" href="/assets/css/fa-brands.css">
+    <link rel="stylesheet" media="screen, print" href="{{ asset('') }}assets/css/fa-light.css">
+    <link rel="stylesheet" media="screen, print" href="{{ asset('') }}assets/css/fa-regular.css">
+    <link rel="stylesheet" media="screen, print" href="{{ asset('') }}assets/css/fa-solid.css">
+    <link rel="stylesheet" media="screen, print" href="{{ asset('') }}assets/css/fa-brands.css">
 @endsection
 @section('pages-content')
     <main id="js-page-content" role="main" class="page-content">

@@ -1,7 +1,7 @@
 @extends('layouts.main_auth')
 @section('title', 'Welcome')
 @section('pages-css')
-    <link rel="stylesheet" media="screen, print" href="/assets/css/fa-brands.css">
+    <link rel="stylesheet" media="screen, print" href="{{ asset('') }}assets/css/fa-brands.css">
 @endsection
 @section('pages-content')
     @component('layouts._auth_header')
@@ -26,12 +26,12 @@
             @endif
         @endcomponent
         <div class="d-flex flex-1"
-            style="background: url(/assets/img/svg/pattern-1.svg) no-repeat center bottom fixed; background-size: cover;">
+            style="background: url({{ asset('') }}assets/img/svg/pattern-1.svg) no-repeat center bottom fixed; background-size: cover;">
             <div
                 class="container py-4 py-lg-5 my-lg-5 px-4 px-sm-0 text-white d-flex align-items-center justify-content-center">
                 <div class="text-center text-white mb-5 pb-5">
                     <div class="py-3">
-                        <img src="/assets/img/{{ $profileApp->app_logo ?? '' }}"
+                        <img src="{{ asset('') }}assets/img/{{ $profileApp->app_logo ?? '' }}"
                             alt="{{ $profileApp->app_nama ?? '' }} WebApp" aria-roledescription="logo"
                             class="img-responsive rounded-circle img-thumbnail">
                     </div>

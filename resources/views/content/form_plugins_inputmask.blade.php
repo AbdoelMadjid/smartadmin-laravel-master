@@ -209,7 +209,7 @@
     </main>
 @endsection
 @section('pages-script')
-    <script src="/assets/js/formplugins/inputmask/inputmask.bundle.js"></script>
+    <script src="{{ asset('') }}assets/js/formplugins/inputmask/inputmask.bundle.js"></script>
     <script>
         $(document).ready(function() {
             $(":input").inputmask();

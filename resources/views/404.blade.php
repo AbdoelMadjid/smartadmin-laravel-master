@@ -7,7 +7,7 @@
         </a>
     @endcomponent
     <div class="d-flex flex-1"
-        style="background: url(/img/svg/pattern-1.svg) no-repeat center bottom fixed; background-size: cover;">
+        style="background: url({{ asset('') }}img/svg/pattern-1.svg) no-repeat center bottom fixed; background-size: cover;">
         <div class="container py-4 py-lg-5 my-lg-5 px-4 px-sm-0 text-white d-flex align-items-center justify-content-center">
             <div class="h-alt-hf d-flex flex-column align-items-center justify-content-center text-center">
                 {{--                             <div class="py-3">

@@ -1,8 +1,8 @@
 @extends('layouts.main')
 @section('title', 'Project Structure')
 @section('pages-css')
-    <link rel="stylesheet" media="screen, print" href="/assets/css/fa-solid.css">
-    <link rel="stylesheet" media="screen, print" href="/assets/css/json-path-picker/json-path-picker.css">
+    <link rel="stylesheet" media="screen, print" href="{{ asset('') }}assets/css/fa-solid.css">
+    <link rel="stylesheet" media="screen, print" href="{{ asset('') }}assets/css/json-path-picker/json-path-picker.css">
 @endsection
 @section('pages-content')
     <main id="js-page-content" role="main" class="page-content">
@@ -50,12 +50,12 @@
     </main>
 @endsection
 @section('pages-script')
-    <script src="/assets/js/json-path-picker/json-path-picker.js"></script>
+    <script src="{{ asset('') }}assets/js/json-path-picker/json-path-picker.js"></script>
     <script type="text/javascript">
         $(document).ready(function() {
             const $pathTarget = document.querySelectorAll('.path');
             const $source = document.querySelector('#json-renderer');
-            const filename = "/assets/media/data/project-structure";
+            const filename = "{{ asset('') }}assets/media/data/project-structure";
             const defaultOpts = {
                 pathNotation: 'dots',
                 pathQuotesType: 'single',

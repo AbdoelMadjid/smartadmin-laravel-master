@@ -1,7 +1,7 @@
 @extends('layouts.main')
 @section('title', 'Nouislider')
 @section('pages-css')
-    <link rel="stylesheet" media="screen, print" href="/assets/css/.../styles.css">
+    <link rel="stylesheet" media="screen, print" href="{{ asset('') }}assets/css/.../styles.css">
 @endsection
 @section('pages-content')
     <main id="js-page-content" role="main" class="page-content">

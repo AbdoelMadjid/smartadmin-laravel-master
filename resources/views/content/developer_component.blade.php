@@ -1,8 +1,8 @@
 @extends('layouts.main')
 @section('title', 'Developer')
 @section('pages-css')
-    <link rel="stylesheet" media="screen, print" href="/assets/css/theme-demo.css">
-    <link rel="stylesheet" media="screen, print" href="/assets/css/notifications/toastr/toastr.css">
+    <link rel="stylesheet" media="screen, print" href="{{ asset('') }}assets/css/theme-demo.css">
+    <link rel="stylesheet" media="screen, print" href="{{ asset('') }}assets/css/notifications/toastr/toastr.css">
 @endsection
 @section('pages-content')
     <main id="js-page-content" role="main" class="page-content">
@@ -691,7 +691,7 @@ Simpan
                     <div class="d-flex flex-wrap demo demo-h-spacing mt-3 mb-3">
                         <div
                             class="rounded-pill bg-white shadow-sm p-2 border-faded mr-3 d-flex flex-row align-items-center justify-content-center flex-shrink-0">
-                            <img src="/assets/img/demo/authors/sunny.png" alt="Sunny A."
+                            <img src="{{ asset('') }}assets/img/demo/authors/sunny.png" alt="Sunny A."
                                 class="img-thumbnail img-responsive rounded-circle" style="width:5rem; height: 5rem;">
                             <div class="ml-2 mr-3">
                                 <h5 class="m-0">
@@ -709,7 +709,7 @@ Simpan
                         </div>
                         <div
                             class="rounded-pill bg-white shadow-sm p-2 border-faded mr-3 d-flex flex-row align-items-center justify-content-center flex-shrink-0">
-                            <img src="/assets/img/demo/authors/josh.png" alt="Jos K."
+                            <img src="{{ asset('') }}assets/img/demo/authors/josh.png" alt="Jos K."
                                 class="img-thumbnail img-responsive rounded-circle" style="width:5rem; height: 5rem;">
                             <div class="ml-2 mr-3">
                                 <h5 class="m-0">
@@ -726,7 +726,7 @@ Simpan
                         </div>
                         <div
                             class="rounded-pill bg-white shadow-sm p-2 border-faded mr-3 d-flex flex-row align-items-center justify-content-center flex-shrink-0">
-                            <img src="/assets/img/demo/authors/jovanni.png" alt="Jovanni Lo"
+                            <img src="{{ asset('') }}assets/img/demo/authors/jovanni.png" alt="Jovanni Lo"
                                 class="img-thumbnail img-responsive rounded-circle" style="width:5rem; height: 5rem;">
                             <div class="ml-2 mr-3">
                                 <h5 class="m-0">
@@ -744,7 +744,7 @@ Simpan
                         </div>
                         <div
                             class="rounded-pill bg-white shadow-sm p-2 border-faded mr-3 d-flex flex-row align-items-center justify-content-center flex-shrink-0">
-                            <img src="/assets/img/demo/authors/roberto.png" alt="Jovanni Lo"
+                            <img src="{{ asset('') }}assets/img/demo/authors/roberto.png" alt="Jovanni Lo"
                                 class="img-thumbnail img-responsive rounded-circle" style="width:5rem; height: 5rem;">
                             <div class="ml-2 mr-3">
                                 <h5 class="m-0">
@@ -849,7 +849,7 @@ Simpan
     </main>
 @endsection
 @section('pages-script')
-    <script src="/assets/js/notifications/toastr/toastr.js"></script>
+    <script src="{{ asset('') }}assets/js/notifications/toastr/toastr.js"></script>
     <script>
         $(document).ready(function() {
             toastr.options = {

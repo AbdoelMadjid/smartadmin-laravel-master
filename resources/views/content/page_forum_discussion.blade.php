@@ -1,7 +1,7 @@
 @extends('layouts.main')
 @section('title', 'Discussion')
 @section('pages-css')
-    <link rel="stylesheet" media="screen, print" href="/assets/css/fa-solid.css">
+    <link rel="stylesheet" media="screen, print" href="{{ asset('') }}assets/css/fa-solid.css">
 @endsection
 @section('pages-content')
     <main id="js-page-content" role="main" class="page-content">
@@ -30,8 +30,8 @@
                     <div class="card-header p-0">
                         <div class="p-3 d-flex flex-row">
                             <div class="d-block flex-shrink-0">
-                                <img src="/assets/img/demo/avatars/avatar-admin.png" class="img-fluid img-thumbnail"
-                                    alt="">
+                                <img src="{{ asset('') }}assets/img/demo/avatars/avatar-admin.png"
+                                    class="img-fluid img-thumbnail" alt="">
                             </div>
                             <div class="d-block ml-2">
                                 <span class="h6 font-weight-bold text-uppercase d-block m-0"><a
@@ -92,8 +92,8 @@
                     <div class="card-header p-0">
                         <div class="p-3 d-flex flex-row">
                             <div class="d-block flex-shrink-0">
-                                <img src="/assets/img/demo/avatars/avatar-b.png" class="img-fluid img-thumbnail"
-                                    alt="">
+                                <img src="{{ asset('') }}assets/img/demo/avatars/avatar-b.png"
+                                    class="img-fluid img-thumbnail" alt="">
                             </div>
                             <div class="d-block ml-2">
                                 <span class="h6 font-weight-bold text-uppercase d-block m-0">RE: Package location</span>
@@ -147,8 +147,8 @@
                     <div class="card-header p-0">
                         <div class="p-3 d-flex flex-row">
                             <div class="d-block flex-shrink-0">
-                                <img src="/assets/img/demo/avatars/avatar-e.png" class="img-fluid img-thumbnail"
-                                    alt="">
+                                <img src="{{ asset('') }}assets/img/demo/avatars/avatar-e.png"
+                                    class="img-fluid img-thumbnail" alt="">
                             </div>
                             <div class="d-block ml-2">
                                 <span class="h6 font-weight-bold text-uppercase d-block m-0">RE: Package location</span>
@@ -200,8 +200,8 @@
                     <div class="card-header p-0">
                         <div class="p-3 d-flex flex-row">
                             <div class="d-block flex-shrink-0">
-                                <img src="/assets/img/demo/avatars/avatar-h.png" class="img-fluid img-thumbnail"
-                                    alt="">
+                                <img src="{{ asset('') }}assets/img/demo/avatars/avatar-h.png"
+                                    class="img-fluid img-thumbnail" alt="">
                             </div>
                             <div class="d-block ml-2">
                                 <span class="h6 font-weight-bold text-uppercase d-block m-0">RE: Package location</span>

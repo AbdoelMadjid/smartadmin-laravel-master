@@ -341,7 +341,7 @@
     <!-- easypiechart bundle:
                   + jquery.easypiechart.js (core)
                   + src/../jquery.easypiechart.config.js (config) -->
-    <script src="/assets/js/statistics/easypiechart/easypiechart.bundle.js"></script>
+    <script src="{{ asset('') }}assets/js/statistics/easypiechart/easypiechart.bundle.js"></script>
     <script>
         $(document).ready(function() {
 

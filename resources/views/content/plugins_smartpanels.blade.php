@@ -1,8 +1,8 @@
 @extends('layouts.main')
 @section('title', 'SmartPanels')
 @section('pages-css')
-    <link rel="stylesheet" media="screen, print" href="/assets/css/fa-solid.css">
-    <link rel="stylesheet" media="screen, print" href="/assets/css/theme-demo.css">
+    <link rel="stylesheet" media="screen, print" href="{{ asset('') }}assets/css/fa-solid.css">
+    <link rel="stylesheet" media="screen, print" href="{{ asset('') }}assets/css/theme-demo.css">
 @endsection
 @section('pages-content')
     <main id="js-page-content" role="main" class="page-content">

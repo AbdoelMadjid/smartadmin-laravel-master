@@ -1,7 +1,8 @@
 @extends('layouts.main')
 @section('title', 'Autofill')
 @section('pages-css')
-    <link rel="stylesheet" media="screen, print" href="/assets/css/datagrid/datatables/datatables.bundle.css">
+    <link rel="stylesheet" media="screen, print"
+        href="{{ asset('') }}assets/css/datagrid/datatables/datatables.bundle.css">
 @endsection
 @section('pages-content')
     <main id="js-page-content" role="main" class="page-content">
@@ -542,7 +543,7 @@
     </main>
 @endsection
 @section('pages-script')
-    <script src="/assets/js/datagrid/datatables/datatables.bundle.js"></script>
+    <script src="{{ asset('') }}assets/js/datagrid/datatables/datatables.bundle.js"></script>
     <script>
         $(document).ready(function() {
             $('#dt-basic-example').dataTable({

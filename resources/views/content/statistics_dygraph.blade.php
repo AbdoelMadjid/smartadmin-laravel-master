@@ -1,7 +1,7 @@
 @extends('layouts.main')
 @section('title', 'Dygraph')
 @section('pages-css')
-    <link rel="stylesheet" media="screen, print" href="/assets/css/statistics/dygraph/dygraph.css">
+    <link rel="stylesheet" media="screen, print" href="{{ asset('') }}assets/css/statistics/dygraph/dygraph.css">
 @endsection
 @section('pages-content')
     <main id="js-page-content" role="main" class="page-content">
@@ -112,9 +112,9 @@
 @endsection
 @section('pages-script')
     <!--dygraph demo data -->
-    <script src="/assets/js/statistics/demo-data/demo-data-dygraph.js"></script>
+    <script src="{{ asset('') }}assets/js/statistics/demo-data/demo-data-dygraph.js"></script>
     <!-- plugin dygraph.js : MIT license -->
-    <script src="/assets/js/statistics/dygraph/dygraph.js"></script>
+    <script src="{{ asset('') }}assets/js/statistics/dygraph/dygraph.js"></script>
     <script>
         $(document).ready(function() {
             g1 = new Dygraph(document.getElementById("noroll"), data_temp, {

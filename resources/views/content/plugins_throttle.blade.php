@@ -1,7 +1,7 @@
 @extends('layouts.main')
 @section('title', 'Throttle')
 @section('pages-css')
-    <link rel="stylesheet" media="screen, print" href="/assets/css/theme-demo.css">
+    <link rel="stylesheet" media="screen, print" href="{{ asset('') }}assets/css/theme-demo.css">
 @endsection
 @section('pages-content')
     <main id="js-page-content" role="main" class="page-content">
@@ -72,14 +72,14 @@
                                 arguments passed through) no more than once every delay milliseconds.
                             </p>
                             <figure class="figure my-4">
-                                <img src="/assets/img/demo/throttle.png" class="figure-img img-fluid rounded"
-                                    alt="throttle">
+                                <img src="{{ asset('') }}assets/img/demo/throttle.png"
+                                    class="figure-img img-fluid rounded" alt="throttle">
                                 <figcaption class="figure-caption">Throttled with no_trailing specified as false or
                                     unspecified.</figcaption>
                             </figure>
                             <figure class="figure my-4">
-                                <img src="/assets/img/demo/throttle-no_trailing.png" class="figure-img img-fluid rounded"
-                                    alt="throttle-no_trailing">
+                                <img src="{{ asset('') }}assets/img/demo/throttle-no_trailing.png"
+                                    class="figure-img img-fluid rounded" alt="throttle-no_trailing">
                                 <figcaption class="figure-caption">Throttled with no_trailing specified as true.
                                 </figcaption>
                             </figure>
@@ -93,14 +93,14 @@
                                 beginning or end.
                             </p>
                             <figure class="figure my-4">
-                                <img src="/assets/img/demo/debounce.png" class="figure-img img-fluid rounded"
-                                    alt="debounce">
+                                <img src="{{ asset('') }}assets/img/demo/debounce.png"
+                                    class="figure-img img-fluid rounded" alt="debounce">
                                 <figcaption class="figure-caption">Debounced with at_begin specified as false or unspecified
                                 </figcaption>
                             </figure>
                             <figure class="figure my-4">
-                                <img src="/assets/img/demo/debounce-at_begin.png" class="figure-img img-fluid rounded"
-                                    alt="debounce-no_trailing">
+                                <img src="{{ asset('') }}assets/img/demo/debounce-at_begin.png"
+                                    class="figure-img img-fluid rounded" alt="debounce-no_trailing">
                                 <figcaption class="figure-caption">Debounced with at_begin specified as true</figcaption>
                             </figure>
                         </div>

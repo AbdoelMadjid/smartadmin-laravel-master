@@ -1,7 +1,7 @@
 @extends('layouts.main')
 @section('title', 'Wizard')
 @section('pages-css')
-    <link rel="stylesheet" media="screen, print" href="/assets/css/formplugins/smartwizard/smartwizard.css">
+    <link rel="stylesheet" media="screen, print" href="{{ asset('') }}assets/css/formplugins/smartwizard/smartwizard.css">
 @endsection
 @section('pages-content')
     <main id="js-page-content" role="main" class="page-content">
@@ -90,7 +90,7 @@
     </main>
 @endsection
 @section('pages-script')
-    <script src="/assets/js/formplugins/smartwizard/smartwizard.js"></script>
+    <script src="{{ asset('') }}assets/js/formplugins/smartwizard/smartwizard.js"></script>
     <script>
         $(document).ready(function() {
 

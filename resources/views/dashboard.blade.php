@@ -12,13 +12,13 @@
             @component('layouts._page_heading', [
                 'icon' => 'home',
                 'heading1' => 'Dashboard',
-                'heading2' => Auth::user()->getRoleLabel(),
-                'pagedescription' => Auth::user()->getRoleLabel() . ' with dashboard',
+                'heading2' => getRoleName(),
+                'pagedescription' => getRoleName() . ' with dashboard',
             ])
                 <div class="subheader-block d-lg-flex align-items-center">
                     <div class="d-inline-flex flex-column justify-content-center mr-3">
                         <span class="fw-300 fs-xs d-block opacity-50">
-                            <small>Selamat Datang</small>
+                            <small>{!! renderGreeting() !!}</small>
                         </span>
                         <span class="fw-500 fs-xl d-block color-primary-500">
                             {{ Auth::user()->name }}
@@ -32,7 +32,18 @@
                             <small>Status</small>
                         </span>
                         <span class="fw-500 fs-xl d-block color-danger-500">
-                            {{ Auth::user()->getRoleLabel() }}
+                            {{ getRoleName() }}
+                        </span>
+                    </div>
+                </div>
+                <div
+                    class="subheader-block d-lg-flex align-items-center border-faded border-right-0 border-top-0 border-bottom-0 ml-3 pl-3">
+                    <div class="d-inline-flex flex-column justify-content-center mr-3">
+                        <span class="fw-300 fs-xs d-block opacity-50">
+                            <small>Times</small>
+                        </span>
+                        <span class="fw-500 fs-xl d-block color-success-500">
+                            <span class="fw-medium" id="dboard">{!! renderTime('dboard') !!}</span>
                         </span>
                     </div>
                 </div>

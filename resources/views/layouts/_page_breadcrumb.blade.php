@@ -10,12 +10,7 @@
     <li class="position-absolute pos-top pos-right d-none d-sm-block">
         {{-- <span class="js-get-date"><span> --}}
         <span>
-            <script src="/assets/js/tanggal.js"></script>
-            [
-            @php
-                echo toHijriah(now());
-            @endphp
-            ]
+            {!! renderDate() !!}
         </span>
     </li>
 </ol>

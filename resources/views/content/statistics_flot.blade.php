@@ -456,7 +456,7 @@
 				+ jquery.flot.threshold.js (extension)
 				+ jquery.flot.tooltip.js (extension)
 				+ jquery.flot.time.js (extension) --> --}}
-    <script src="/assets/js/statistics/flot/flot.bundle.js"></script>
+    <script src="{{ asset('') }}assets/js/statistics/flot/flot.bundle.js"></script>
     <script>
         /* defined datas */
         var dataTargetProfit = [

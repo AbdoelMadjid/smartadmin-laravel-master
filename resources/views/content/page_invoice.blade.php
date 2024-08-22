@@ -1,7 +1,7 @@
 @extends('layouts.main')
 @section('title', 'Invoice')
 @section('pages-css')
-    <link rel="stylesheet" media="screen, print" href="/assets/css/page-invoice.css">
+    <link rel="stylesheet" media="screen, print" href="{{ asset('') }}assets/css/page-invoice.css">
 @endsection
 @section('pages-content')
     <!-- the #js-page-content id is needed for some plugins to initialize -->

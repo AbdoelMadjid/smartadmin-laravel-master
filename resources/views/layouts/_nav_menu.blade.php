@@ -12,7 +12,7 @@
         </a>
     </li>
     @if (Auth::user()->getRoleLabel() == 'Master')
-        {{-- @include('layouts.mainmenu._menu_depelover') --}}
+        @include('layouts.mainmenu._menu_depelover')
         @include('layouts.mainmenu._menu_intel_app')
         @include('layouts.mainmenu._menu_tools_component_app')
         @include('layouts.mainmenu._menu_plugin_addon_app')

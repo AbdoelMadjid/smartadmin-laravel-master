@@ -13,14 +13,14 @@
         + smartpanels.js (extension)
         + src/../jquery-snippets.js (core)
     -->
-    <script src="/assets/js/vendors.bundle.js"></script>
-    <script src="/assets/js/app.bundle.js"></script>
-    <script src="/assets/js/confirmRedirect.js"></script>
-    <script src="/assets/js/customAlert.js"></script>
+    <script src="{{ asset('') }}assets/js/vendors.bundle.js"></script>
+    <script src="{{ asset('') }}assets/js/app.bundle.js"></script>
+    <script src="{{ asset('') }}assets/js/confirmRedirect.js"></script>
+    <script src="{{ asset('') }}assets/js/customAlert.js"></script>
     {{--
     <script type="text/javascript">
         /* Activate smart panels */
         $('#js-page-content').smartPanel();
     </script>
     --}}
-    <script src="/assets/js/notifications/toastr/toastr.js"></script>
+    <script src="{{ asset('') }}assets/js/notifications/toastr/toastr.js"></script>

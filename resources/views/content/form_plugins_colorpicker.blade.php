@@ -1,7 +1,8 @@
 @extends('layouts.main')
 @section('title', 'Color Picker')
 @section('pages-css')
-    <link rel="stylesheet" media="screen, print" href="/assets/css/formplugins/bootstrap-colorpicker/bootstrap-colorpicker.css">
+    <link rel="stylesheet" media="screen, print"
+        href="{{ asset('') }}assets/css/formplugins/bootstrap-colorpicker/bootstrap-colorpicker.css">
 @endsection
 @section('pages-content')
     <main id="js-page-content" role="main" class="page-content">
@@ -585,7 +586,7 @@
     </main>
 @endsection
 @section('pages-script')
-    <script src="/assets/js/formplugins/bootstrap-colorpicker/bootstrap-colorpicker.js"></script>
+    <script src="{{ asset('') }}assets/js/formplugins/bootstrap-colorpicker/bootstrap-colorpicker.js"></script>
     <script>
         $(document).ready(function() {
             $('#cp1').colorpicker();

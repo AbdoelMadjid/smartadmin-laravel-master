@@ -1,7 +1,7 @@
 @extends('layouts.main')
 @section('title', 'Theme Modes (beta)')
 @section('pages-css')
-    <link rel="stylesheet" media="screen, print" href="/assets/css/theme-demo.css">
+    <link rel="stylesheet" media="screen, print" href="{{ asset('') }}assets/css/theme-demo.css">
 @endsection
 @section('pages-content')
     <main id="js-page-content" role="main" class="page-content">
@@ -59,7 +59,8 @@
                         <div class="demo-window rounded mb-g shadow-1 m-auto" style="max-width:650px">
                             <div class="demo-window-content">
                                 <!-- content -->
-                                <img src="/assets/img/demo/modes/mode-light-lg.png" class="img-fluid" alt="Light Mode">
+                                <img src="{{ asset('') }}assets/img/demo/modes/mode-light-lg.png" class="img-fluid"
+                                    alt="Light Mode">
                             </div>
                         </div>
                         <p class="text-center">
@@ -81,7 +82,8 @@
                         <div class="demo-window rounded mb-g shadow-1 m-auto" style="max-width:650px">
                             <div class="demo-window-content">
                                 <!-- content -->
-                                <img src="/assets/img/demo/modes/mode-dark-lg.png" class="img-fluid" alt="Dark Mode">
+                                <img src="{{ asset('') }}assets/img/demo/modes/mode-dark-lg.png" class="img-fluid"
+                                    alt="Dark Mode">
                             </div>
                         </div>
                         <p class="text-center">
@@ -103,7 +105,8 @@
                         <div class="demo-window rounded mb-g shadow-1 m-auto" style="max-width:650px">
                             <div class="demo-window-content">
                                 <!-- content -->
-                                <img src="/assets/img/demo/modes/mode-default-lg.png" class="img-fluid" alt="Default Mode">
+                                <img src="{{ asset('') }}assets/img/demo/modes/mode-default-lg.png" class="img-fluid"
+                                    alt="Default Mode">
                             </div>
                         </div>
                         <p class="text-center">
@@ -125,7 +128,7 @@
                         <div class="demo-window rounded mb-g shadow-1 m-auto" style="max-width:650px">
                             <div class="demo-window-content">
                                 <!-- content -->
-                                <img src="/assets/img/demo/modes/mode-glass-lg.png" class="img-fluid"
+                                <img src="{{ asset('') }}assets/img/demo/modes/mode-glass-lg.png" class="img-fluid"
                                     alt="Glass Mode (coming soon)">
                             </div>
                         </div>

@@ -1,7 +1,7 @@
 @extends('layouts.main')
 @section('title', 'Dropzone')
 @section('pages-css')
-    <link rel="stylesheet" media="screen, print" href="/assets/css/formplugins/dropzone/dropzone.css">
+    <link rel="stylesheet" media="screen, print" href="{{ asset('') }}assets/css/formplugins/dropzone/dropzone.css">
 @endsection
 @section('pages-content')
     <main id="js-page-content" role="main" class="page-content">
@@ -79,5 +79,5 @@
     </main>
 @endsection
 @section('pages-script')
-    <script src="/assets/js/formplugins/dropzone/dropzone.js"></script>
+    <script src="{{ asset('') }}assets/js/formplugins/dropzone/dropzone.js"></script>
 @endsection

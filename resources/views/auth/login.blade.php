@@ -11,7 +11,7 @@ License: You must have a valid license purchased only from wrapbootstrap.com (li
 
     <head>
         @include('layouts._head')
-        <link rel="stylesheet" media="screen, print" href="/assets/css/page-login-alt.css">
+        <link rel="stylesheet" media="screen, print" href="{{ asset('') }}assets/css/page-login-alt.css">
     </head>
     <!-- BEGIN Body -->
     <!-- Possible Classes
@@ -47,7 +47,7 @@ License: You must have a valid license purchased only from wrapbootstrap.com (li
             <div
                 class="page-logo m-0 w-100 align-items-center justify-content-center rounded border-bottom-left-radius-0 border-bottom-right-radius-0 px-4">
                 <a href="javascript:void(0)" class="page-logo-link press-scale-down d-flex align-items-center">
-                    <img src="/assets/img/{{ $profileApp->app_logo ?? '' }}"
+                    <img src="{{ asset('') }}assets/img/{{ $profileApp->app_logo ?? '' }}"
                         alt="{{ $profileApp->app_nama ?? '' }} WebApp" aria-roledescription="logo">
                     <span class="page-logo-text mr-1">{{ $profileApp->app_nama ?? '' }} WebApp</span>
 
@@ -92,9 +92,9 @@ License: You must have a valid license purchased only from wrapbootstrap.com (li
                 href="https://laravel.com/docs/10.x" title='laravel.com' class="opacity-90" target="_blank">Laravel
                 v{{ Illuminate\Foundation\Application::VERSION }} (PHP v{{ PHP_VERSION }})</a>
         </div>
-        <video poster="/assets/img/backgrounds/clouds.png" id="bgvid" playsinline autoplay muted loop>
-            <source src="/assets/media/video/cc.webm" type="video/webm">
-            <source src="/assets/media/video/cc.mp4" type="video/mp4">
+        <video poster="{{ asset('') }}assets/img/backgrounds/clouds.png" id="bgvid" playsinline autoplay muted loop>
+            <source src="{{ asset('') }}assets/media/video/cc.webm" type="video/webm">
+            <source src="{{ asset('') }}assets/media/video/cc.mp4" type="video/mp4">
         </video>
         <!-- BEGIN Color profile -->
         <!-- this area is hidden and will not be seen on screens or screen readers -->
