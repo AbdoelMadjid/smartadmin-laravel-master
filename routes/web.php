@@ -1,11 +1,6 @@
 <?php
 
-use App\Http\Controllers\Konfigurasi\AksesRoleController;
-use App\Http\Controllers\Konfigurasi\AksesUserController;
 use App\Http\Controllers\Konfigurasi\MenuController;
-use App\Http\Controllers\Konfigurasi\PermissionController;
-use App\Http\Controllers\Konfigurasi\RoleController;
-use App\Http\Controllers\Konfigurasi\UserController;
 use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\TemplateController;
 use Illuminate\Support\Facades\Route;
@@ -33,6 +28,8 @@ Route::middleware('auth')->group(function () {
     Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
     Route::patch('/profile', [ProfileController::class, 'update'])->name('profile.update');
     Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
+
+    Route::resource('konfigurasi/menu', MenuController::class);
 });
 Route::get('/about', [TemplateController::class, 'about'])->name('about');
 
