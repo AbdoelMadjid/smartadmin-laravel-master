@@ -26,10 +26,10 @@
                             <a href="javascript:void(0);"
                                 class="btn btn-outline-success btn-sm ml-auto mr-2 flex-shrink-0 waves-effect waves-themed">
                                 <i class="fal fa-pencil-alt"></i> Add</a>
+                            <a href="javascript:void(0);"
+                                class="btn btn-outline-danger btn-sm flex-shrink-0 waves-effect waves-themed"><i
+                                    class="fal fa-sort"></i> Sort</a>
                         @endcan
-                        <a href="javascript:void(0);"
-                            class="btn btn-outline-danger btn-sm flex-shrink-0 waves-effect waves-themed"><i
-                                class="fal fa-sort"></i> Sort</a>
                     </div>
                 </div>
             </div>
