@@ -14,6 +14,7 @@ class MenuController extends Controller
      */
     public function index(MenuDataTable $menuDataTable)
     {
+        $this->authorize('read konfigurasi/menu');
         return $menuDataTable->render('pages.konfigurasi.menu');
     }
 
