@@ -48,7 +48,7 @@ if (!function_exists('renderGreeting')) {
         }
 
         // Return the greeting HTML
-        return "<span id='greeting-display'>$greeting</span>";
+        return $greeting;
     }
 }
 
