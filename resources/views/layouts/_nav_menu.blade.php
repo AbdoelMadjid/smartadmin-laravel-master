@@ -11,7 +11,6 @@
             <span class="nav-link-text" data-i18n="nav.application_about">About</span>
         </a>
     </li>
-    @include('layouts.mainmenu._menu_konfigurasi')
 
     @if (getRoleName() == 'Master')
         @include('layouts.mainmenu._menu_depelover')

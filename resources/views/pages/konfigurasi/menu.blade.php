@@ -1,9 +1,9 @@
 @extends('layouts.main')
 @section('title', 'Menu')
 @section('pages-css')
-    {{-- <link href="https://cdn.datatables.net/v/dt/dt-2.1.4/af-2.7.0/datatables.min.css" rel="stylesheet"> --}}
-    <link rel="stylesheet" media="screen, print"
-        href="{{ asset('') }}assets/css/datagrid/datatables/datatables.bundle.css">
+    <link href="{{ asset('') }}assets/libs/datatables.net-bs5/css/dataTables.bootstrap5.min.css" rel="stylesheet" />
+    <link href="{{ asset('') }}assets/libs/datatables.net-responsive-bs5/css/responsive.bootstrap5.min.css"
+        rel="stylesheet" />
 @endsection
 @section('pages-content')
     <main id="js-page-content" role="main" class="page-content">
@@ -15,32 +15,62 @@
             ])
             @endcomponent
         </div>
-        <div class="card mb-g border shadow-0">
+        <div class="card">
             <div class="card-header">
-                <div class="row no-gutters align-items-center">
-                    <div class="col">
-                        <span class="h6 font-weight-bold text-uppercase">Daftar Menu</span>
-                    </div>
-                    <div class="col d-flex">
+                <h4>Menu</h4>
+            </div>
+            <div class="card-body">
+                <div class="row">
+                    <div class="col-12">
                         @can('create konfigurasi/menu')
-                            <a href="javascript:void(0);"
-                                class="btn btn-outline-success btn-sm ml-auto mr-2 flex-shrink-0 waves-effect waves-themed">
-                                <i class="fal fa-pencil-alt"></i> Add</a>
-                            <a href="javascript:void(0);"
-                                class="btn btn-outline-danger btn-sm flex-shrink-0 waves-effect waves-themed"><i
-                                    class="fal fa-sort"></i> Sort</a>
+                            <a class="mb-3 btn btn-primary action" href="{{ route('konfigurasi.menu.create') }}">Add</a>
+                        @endcan
+                        @can('sort konfigurasi/menu')
+                            <a class="mb-3 btn btn-info sort" href="{{ route('konfigurasi.menu.sort') }}">Sort Menu</a>
                         @endcan
                     </div>
                 </div>
-            </div>
-            <div class="card-body">
                 {{ $dataTable->table() }}
             </div>
         </div>
     </main>
 @endsection
 @section('pages-script')
-    {{-- <script src="https://cdn.datatables.net/v/dt/dt-2.1.4/af-2.7.0/datatables.min.js"></script> --}}
-    <script src="{{ asset('') }}assets/js/datagrid/datatables/datatables.bundle.js"></script>
+    <script src="{{ asset('') }}assets/libs/jquery/jquery.min.js"></script>
+    <script src="{{ asset('') }}assets/libs/datatables.net/js/jquery.dataTables.min.js"></script>
+    <script src="{{ asset('') }}assets/libs/datatables.net-bs5/js/dataTables.bootstrap5.min.js"></script>
+    <script src="{{ asset('') }}assets/libs/datatables.net-responsive/js/dataTables.responsive.min.js"></script>
+    <script src="{{ asset('') }}assets/libs/datatables.net-responsive-bs5/js/responsive.bootstrap5.min.js"></script>
+
     {{ $dataTable->scripts() }}
+
+    <script src="{{ asset('') }}assets/js/main.js"></script>
+
+    <script>
+        const datatable = 'menu-table';
+
+        function handleMenuChange() {
+            $('[name=level_menu]').on('change', function() {
+                if (this.value == 'sub_menu') {
+                    $('#main_menu_wrapper').removeClass('d-none')
+                } else {
+                    $('#main_menu_wrapper').addClass('d-none')
+                }
+            })
+        }
+
+        $('.sort').on('click', function(e) {
+            e.preventDefault()
+
+            handleAjax(this.href, 'put')
+                .onSuccess(function(res) {
+                    window.location.reload()
+                }, false)
+                .execute()
+        })
+
+        handleAction(datatable, function() {
+            handleMenuChange()
+        })
+    </script>
 @endsection

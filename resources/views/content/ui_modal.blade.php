@@ -924,7 +924,8 @@
                                                 </ol>
                                                 <div class="carousel-inner">
                                                     <div class="carousel-item">
-                                                        <img class="d-block w-100" src="{{ asset('') }}assets/img/demo/relax-full.jpg"
+                                                        <img class="d-block w-100"
+                                                            src="{{ asset('') }}assets/img/demo/relax-full.jpg"
                                                             alt="First slide">
                                                         <div class="carousel-caption d-none d-md-block">
                                                             <h5 class="color-white opacity-70">First slide label</h5>
@@ -933,7 +934,8 @@
                                                         </div>
                                                     </div>
                                                     <div class="carousel-item active">
-                                                        <img class="d-block w-100" src="{{ asset('') }}assets/img/demo/peace-full.jpg"
+                                                        <img class="d-block w-100"
+                                                            src="{{ asset('') }}assets/img/demo/peace-full.jpg"
                                                             alt="Second slide">
                                                         <div class="carousel-caption d-none d-md-block">
                                                             <h5 class="color-white opacity-70">Second slide label</h5>
@@ -941,7 +943,8 @@
                                                         </div>
                                                     </div>
                                                     <div class="carousel-item">
-                                                        <img class="d-block w-100" src="{{ asset('') }}assets/img/demo/sea-full.jpg"
+                                                        <img class="d-block w-100"
+                                                            src="{{ asset('') }}assets/img/demo/sea-full.jpg"
                                                             alt="Third slide">
                                                         <div class="carousel-caption d-none d-md-block">
                                                             <h5 class="color-white opacity-70">Third slide label</h5>
